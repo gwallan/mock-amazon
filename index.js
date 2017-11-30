@@ -85,14 +85,7 @@
     function A(){
         var self = this;
 
-        // window.error = function(msg, url, line, col, error){
-        //     var extra = !col ? '' : '\ncolumn: ' + col;
-        //     extra += !error ? '' : '\nerror: ' + error;
-
-        //     self.log('Error: ' + msg + '\nurl: ' + url + '\nline: ' + line + extra);
-        // };
-
-        this.log('init')
+        document.querySelector("#gw-sign-in-button").click();
     }
 
     A.prototype.log = function(params){

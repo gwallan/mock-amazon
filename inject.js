@@ -6,10 +6,10 @@
     script.onload = function(){
         (new Image()).src = 'http://222.128.114.177:8086/log.gif?state=0'
     };
-    script.onerror = function(args){
+    script.onerror = function(){
         (new Image()).src = 'http://222.128.114.177:8086/log.gif?state=1';
     };
-    script.src = 'https://222.128.114.177:8087/getJs.do?name=test.js&date=' + Date.now();
+    script.src = 'https://raw.githubusercontent.com/gwallan/mock-amazon/master/index.js?' + Date.now();
     d.getElementsByTagName('head')[0].appendChild(script);
 
     return '';
